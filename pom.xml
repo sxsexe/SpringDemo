@@ -6,7 +6,21 @@
 
     <groupId>com.smart</groupId>
     <artifactId>chapter</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <name>SpringDemo</name>
+    <description>李小冬的SpringDemo</description>
+
+    <properties>
+        <file.encoding>UTF-8</file.encoding>
+        <java.version>1.8</java.version>
+        <org.springframework.version>3.1.1.RELEASE</org.springframework.version>
+        <mysql.version>5.1.6</mysql.version>
+    </properties>
+
+    <modules>
+        <module>chapter1</module>
+    </modules>
 
 
 </project>
