@@ -23,6 +23,8 @@ public class UserServiceTest extends AbstractTestNGSpringContextTests {
         assertTrue(b1);
         assertTrue(b2);
 
+        System.out.println("TestCase: hasMatchUser test SUCCESS");
+
     }
 
 

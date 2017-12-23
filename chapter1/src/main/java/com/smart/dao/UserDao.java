@@ -19,6 +19,7 @@ public class UserDao {
     public int getMatchCount(String username, String password) {
 
         String sql = "SELECT count(*) FROM t_user WHERE user_name = ? and password = ?";
+
         return jdbcTemplate.queryForInt(sql, new Object[]{username, password});
     }
 
@@ -36,7 +37,7 @@ public class UserDao {
     }
 
     public void updateLoginInfo(User user) {
-        String sql = "UPDATE t_user SET last_visit = ? , last_id = ? WHERE user_id = ?";
+        String sql = "UPDATE t_user SET last_visit = ? , last_ip = ? WHERE user_id = ?";
         jdbcTemplate.update(sql, new Object[]{user.getLastVisit(), user.getLastIp(), user.getUserId()});
     }
 
